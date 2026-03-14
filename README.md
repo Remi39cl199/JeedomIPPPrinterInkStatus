@@ -7,10 +7,12 @@ Bash script that provide json information about ink level for an IPP printer
 <code>sudo apt-get install cups-ipp-utils</code></p>
 
 <h3>installation</h3>
-<code>cd /var/www/html/pulgins/script/data/
-## git pull https://github.com/Remi39cl199/JeedomIPPPrinterInkStatus/blob/main/jeedom_ipp_printer_ink_status.sh
+<code>sudo cd /var/www/html/pulgins/script/data/
+sudo git clone https://github.com/Remi39cl199/JeedomIPPPrinterInkStatus
+sudo mv ./JeedomIPPPrinterInkStatus/jeedom_ipp_printer_ink_status.sh ./
 sudo chmod +x ./jeedom_ipp_printer_ink_status.sh
 sudo chown www-data:www-data ./jeedom_ipp_printer_ink_status.sh</code>
+
 <h3>Usage</h3>
 <code>/var/www/html/plugins/script/data/jeedom_ipp_printer_ink_status.sh IP_ADDRESS_OF_IPP_PRINTER</code>
 
